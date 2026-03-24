@@ -7,8 +7,8 @@ _Connecting Students Through Study, Events, and Community Engagement_
 <br/>
 
 <img src="https://img.shields.io/badge/node.js-18.x-brightgreen?style=for-the-badge" height="30"/>
-<img src="https://img.shields.io/github/languages/count/razeev.asnx/CampusLink?label=languages&color=orange&style=for-the-badge" height="30"/>
-<img src="https://img.shields.io/github/last-commit/razeev.asnx/CampusLink?label=last%20commit&color=blue&style=for-the-badge" height="30"/>
+<img src="https://img.shields.io/github/languages/count/razeevascx/CampusLink?label=languages&color=orange&style=for-the-badge" height="30"/>
+<img src="https://img.shields.io/github/last-commit/razeevascx/CampusLink?label=last%20commit&color=blue&style=for-the-badge" height="30"/>
 
 <br/>
 
@@ -45,77 +45,6 @@ CampusLink is a full-stack web application designed to enhance student engagemen
 - **Backend:** Node.js 18+, Express.js 5.2+, PostgreSQL
 - **Authentication:** JWT (JSON Web Tokens), bcrypt password hashing
 - **Development:** npm, nodemon for hot-reload
-
-## Project Structure
-
-```
-CampusLink/
-├── backend/                    # Express.js API server
-│   ├── src/
-│   │   ├── server.js          # Main server entry point
-│   │   ├── seed.js            # Database seeding script
-│   │   ├── config/
-│   │   │   └── db.js          # Database connection config
-│   │   ├── controllers/       # Business logic handlers
-│   │   │   ├── authController.js
-│   │   │   ├── userController.js
-│   │   │   ├── eventController.js
-│   │   │   ├── buddyController.js
-│   │   │   ├── groupController.js
-│   │   │   ├── notificationController.js
-│   │   │   └── adminController.js
-│   │   ├── routes/            # API route definitions
-│   │   │   ├── authRoutes.js
-│   │   │   ├── userRoutes.js
-│   │   │   ├── eventRoutes.js
-│   │   │   ├── buddyRoutes.js
-│   │   │   ├── groupRoutes.js
-│   │   │   ├── notificationRoutes.js
-│   │   │   └── adminRoutes.js
-│   │   └── middleware/        # Authentication & validation
-│   ├── package.json
-│   └── .env.example
-├── frontend/                  # React application
-│   ├── public/
-│   │   └── index.html         # Main HTML file
-│   ├── src/
-│   │   ├── App.js            # Root component
-│   │   ├── index.js          # React entry point
-│   │   ├── styles.css        # Global styles
-│   │   ├── components/       # Reusable components
-│   │   │   ├── AdminRoute.js
-│   │   │   ├── Footer.js
-│   │   │   ├── Navbar.js
-│   │   │   ├── ProtectedRoute.js
-│   │   │   └── NotificationBell.js
-│   │   ├── context/          # React context
-│   │   │   └── AuthContext.js
-│   │   ├── pages/            # Page components
-│   │   │   ├── HomePage.js
-│   │   │   ├── LoginPage.js
-│   │   │   ├── RegisterPage.js
-│   │   │   ├── DashboardPage.js
-│   │   │   ├── EventsPage.js
-│   │   │   ├── AddEventPage.js
-│   │   │   ├── EditEventPage.js
-│   │   │   ├── SavedEventsPage.js
-│   │   │   ├── StudyBuddiesPage.js
-│   │   │   ├── StudyGroupsPage.js
-│   │   │   ├── ProfilePage.js
-│   │   │   ├── EditProfilePage.js
-│   │   │   ├── AdminDashboardPage.js
-│   │   │   └── AdminLoginPage.js
-│   │   └── services/         # API service layer
-│   │       └── api.js
-│   ├── package.json
-│   └── .env.example
-├── database/                  # Database setup & seeds
-│   ├── schema.sql            # PostgreSQL schema
-│   └── seed.sql              # Sample data
-├── .env.example              # Environment variables template
-└── README.md
-
-```
 
 ## Setup
 
@@ -203,6 +132,77 @@ CampusLink/
 
 - Email: `admin@campuslink.edu`
 - Password: `Admin@123`
+
+## Project Structure
+
+```
+CampusLink/
+├── backend/                    # Express.js API server
+│   ├── src/
+│   │   ├── server.js          # Main server entry point
+│   │   ├── seed.js            # Database seeding script
+│   │   ├── config/
+│   │   │   └── db.js          # Database connection config
+│   │   ├── controllers/       # Business logic handlers
+│   │   │   ├── authController.js
+│   │   │   ├── userController.js
+│   │   │   ├── eventController.js
+│   │   │   ├── buddyController.js
+│   │   │   ├── groupController.js
+│   │   │   ├── notificationController.js
+│   │   │   └── adminController.js
+│   │   ├── routes/            # API route definitions
+│   │   │   ├── authRoutes.js
+│   │   │   ├── userRoutes.js
+│   │   │   ├── eventRoutes.js
+│   │   │   ├── buddyRoutes.js
+│   │   │   ├── groupRoutes.js
+│   │   │   ├── notificationRoutes.js
+│   │   │   └── adminRoutes.js
+│   │   └── middleware/        # Authentication & validation
+│   ├── package.json
+│   └── .env.example
+├── frontend/                  # React application
+│   ├── public/
+│   │   └── index.html         # Main HTML file
+│   ├── src/
+│   │   ├── App.js            # Root component
+│   │   ├── index.js          # React entry point
+│   │   ├── styles.css        # Global styles
+│   │   ├── components/       # Reusable components
+│   │   │   ├── AdminRoute.js
+│   │   │   ├── Footer.js
+│   │   │   ├── Navbar.js
+│   │   │   ├── ProtectedRoute.js
+│   │   │   └── NotificationBell.js
+│   │   ├── context/          # React context
+│   │   │   └── AuthContext.js
+│   │   ├── pages/            # Page components
+│   │   │   ├── HomePage.js
+│   │   │   ├── LoginPage.js
+│   │   │   ├── RegisterPage.js
+│   │   │   ├── DashboardPage.js
+│   │   │   ├── EventsPage.js
+│   │   │   ├── AddEventPage.js
+│   │   │   ├── EditEventPage.js
+│   │   │   ├── SavedEventsPage.js
+│   │   │   ├── StudyBuddiesPage.js
+│   │   │   ├── StudyGroupsPage.js
+│   │   │   ├── ProfilePage.js
+│   │   │   ├── EditProfilePage.js
+│   │   │   ├── AdminDashboardPage.js
+│   │   │   └── AdminLoginPage.js
+│   │   └── services/         # API service layer
+│   │       └── api.js
+│   ├── package.json
+│   └── .env.example
+├── database/                  # Database setup & seeds
+│   ├── schema.sql            # PostgreSQL schema
+│   └── seed.sql              # Sample data
+├── .env.example              # Environment variables template
+└── README.md
+
+```
 
 ## Support and Community
 
